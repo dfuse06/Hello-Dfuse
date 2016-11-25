@@ -32,9 +32,9 @@ do
             cd ~/Tesla/device
             git clone https://github.com/dfuse06/device_lge_ls990.git lge/ls990
             cd ~/Tesla/device/lge
-            git clone https://github.com/dfuse06/android_device_lge_g3-common.git g3-common
+            git clone https://github.com/Tesla-M-Devices/android_device_lge_g3-common.git g3-common
             cd ~/Tesla 
-            git clone https://github.com/dfuse06/Reaper_g3.git kernel/lge/g3
+            git clone https://github.com/GZR-Kernels/fusebox_kernel_lge_g3.git kernel/lge/g3
             cd ~/Tesla/vendor 
             git clone https://github.com/dfuse06/proprietary_vendor_lge_ls990.git lge
             cd ~/roms
@@ -64,7 +64,7 @@ do
             cd ~/Tesla/device
             git clone https://github.com/dfuse06/device_htc_flounder.git htc/flounder
             cd ~/Tesla 
-            git clone https://github.com/dfuse06/android_kernel_htc_flounder.git kernel/htc/flounder
+            git clone https://github.com/GZR-Kernels/fusebox_kernel_htc_flounder.git kernel/htc/flounder
             cd ~/Tesla/vendor 
             git clone https://github.com/DirtyUnicorns/android_vendor_htc.git htc
             cd ~/Tesla
