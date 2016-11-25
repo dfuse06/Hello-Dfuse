@@ -10,7 +10,7 @@
   echo -e ${CL_BLU}"                                                          ${CL_RST}";
 
   PS3='What would you like to do today?:'
-  options=("Build ls990 clean" "Build flounder clean" "Build ls990 dirty" "Build flounder dirty" "Quit")
+  options=("Build ls990 clean" "Build flounder clean" "Build ls990 dirty" "Build flounder dirty" "Sync ls990 gsm" "Sync ls990 cmda" "Sync flounder" "Quit")
   select opt in "${options[@]}"
 do
     case $opt in
@@ -92,6 +92,49 @@ do
             mv -f $ANDROID_PRODUCT_OUT/Tesla*.zip ~/roms
             cd
             ;;
+        "Sync ls990 gsm"
+           rm -rf ~/Tesla/device/lge
+           rm -rf ~/Tesla/kernel/lge
+           rm -rf ~/Tesla/vendor/lge
+           cd ~/Tesla
+           cd ~/Tesla/device
+           git clone https://github.com/dfuse06/device_lge_ls990.git lge/ls990
+           cd ~/Tesla/device/lge
+           git clone https://github.com/Tesla-M-Devices/android_device_lge_g3-common.git g3-common
+           cd ~/Tesla 
+           git clone https://github.com/GZR-Kernels/fusebox_kernel_lge_g3 kernel/lge/g3
+           cd ~/Tesla/vendor 
+           git clone https://github.com/dfuse06/proprietary_vendor_lge_ls990.git lge
+           cd ~/roms
+           cp tesla.devices ~/Tesla/vendor/tesla
+           cd ~/Tesla
+           ;;
+        "Sync ls990 cdma"
+           rm -rf ~/Tesla/device/lge
+           rm -rf ~/Tesla/kernel/lge
+           rm -rf ~/Tesla/vendor/lge
+           cd ~/Tesla
+           cd ~/Tesla/device
+           https://github.com/Tesla-M-Devices/device_lge_ls990.git lge/ls990
+           cd ~/Tesla/device/lge
+           git clone https://github.com/Tesla-M-Devices/android_device_lge_g3-common.git g3-common
+           cd ~/Tesla 
+           git clone https://github.com/GZR-Kernels/fusebox_kernel_lge_g3 kernel/lge/g3
+           cd ~/Tesla/vendor 
+           git clone https://github.com/dfuse06/proprietary_vendor_lge_ls990.git lge
+           cd ~/roms
+           cp tesla.devices ~/Tesla/vendor/tesla
+           cd ~/Tesla
+           ;;
+        "Sync flounder"
+          cd ~/Tesla/device
+          git clone https://github.com/dfuse06/device_htc_flounder.git htc/flounder
+          cd ~/Tesla 
+          git clone https://github.com/GZR-Kernels/fusebox_kernel_htc_flounder.git kernel/htc/flounder
+          cd ~/Tesla/vendor 
+          git clone https://github.com/DirtyUnicorns/android_vendor_htc.git htc
+          cd ~/Tesla
+          ;;
         "Quit")
             exit
             ;;
