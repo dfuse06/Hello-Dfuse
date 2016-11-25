@@ -8,7 +8,9 @@
   echo -e ${CL_BLU}"|     | -_| | | . |  |  |  |___|   __|  |  |__   |   __|  ${CL_BLU}";
   echo -e ${CL_BLU}"|__|__|___|_|_|___|  |____/    |__|  |_____|_____|_____|  ${CL_BLU}";
   echo -e ${CL_BLU}"                                                          ${CL_RST}";
-
+  
+while true
+do 
   PS3='What would you like to do today?:'
   options=("Build ls990 clean" "Build flounder clean" "Build ls990 dirty" "Build flounder dirty" "Sync ls990 gsm" "Sync ls990 cdma" "Sync flounder" "Remove source & sync" "Quit")
   select opt in "${options[@]}"
@@ -94,7 +96,7 @@ do
             ;;
         "Sync ls990 gsm")
            rm -rf ~/Tesla/device/lge
-           rm -rf ~/Tesla/kernel/lge
+           rm -rf ~/Tesla/kernel
            rm -rf ~/Tesla/vendor/lge
            cd ~/Tesla
            cd ~/Tesla/device
@@ -111,7 +113,7 @@ do
            ;;
         "Sync ls990 cdma")
            rm -rf ~/Tesla/device/lge
-           rm -rf ~/Tesla/kernel/lge
+           rm -rf ~/Tesla/kernel
            rm -rf ~/Tesla/vendor/lge
            cd ~/Tesla
            cd ~/Tesla/device
@@ -146,3 +148,5 @@ do
         *) echo invalid option;;
     esac
 done
+done
+
