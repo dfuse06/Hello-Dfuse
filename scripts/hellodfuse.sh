@@ -92,7 +92,7 @@ do
             mv -f $ANDROID_PRODUCT_OUT/Tesla*.zip ~/roms
             cd
             ;;
-        "Sync ls990 gsm"
+        "Sync ls990 gsm")
            rm -rf ~/Tesla/device/lge
            rm -rf ~/Tesla/kernel/lge
            rm -rf ~/Tesla/vendor/lge
@@ -109,7 +109,7 @@ do
            cp tesla.devices ~/Tesla/vendor/tesla
            cd ~/Tesla
            ;;
-        "Sync ls990 cdma"
+        "Sync ls990 cdma")
            rm -rf ~/Tesla/device/lge
            rm -rf ~/Tesla/kernel/lge
            rm -rf ~/Tesla/vendor/lge
@@ -126,7 +126,7 @@ do
            cp tesla.devices ~/Tesla/vendor/tesla
            cd ~/Tesla
            ;;
-        "Sync flounder"
+        "Sync flounder")
           cd ~/Tesla/device
           git clone https://github.com/dfuse06/device_htc_flounder.git htc/flounder
           cd ~/Tesla 
