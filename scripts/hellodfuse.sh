@@ -115,7 +115,7 @@ do
            rm -rf ~/Tesla/vendor/lge
            cd ~/Tesla
            cd ~/Tesla/device
-           https://github.com/Tesla-M-Devices/device_lge_ls990.git lge/ls990
+           git clone https://github.com/Tesla-M-Devices/device_lge_ls990.git lge/ls990
            cd ~/Tesla/device/lge
            git clone https://github.com/Tesla-M-Devices/android_device_lge_g3-common.git g3-common
            cd ~/Tesla 
