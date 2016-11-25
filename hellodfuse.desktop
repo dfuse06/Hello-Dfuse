@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Exec=xfce4-terminal --maximize -e '/home/dfuse/scripts/hellodfuse.sh'
+Hidden=false
+Name=Startup Script
+Comment=
