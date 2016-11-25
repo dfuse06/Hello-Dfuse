@@ -10,7 +10,7 @@
   echo -e ${CL_BLU}"                                                          ${CL_RST}";
 
   PS3='What would you like to do today?:'
-  options=("Build ls990 clean" "Build flounder clean" "Build ls990 dirty" "Build flounder dirty" "Sync ls990 gsm" "Sync ls990 cmda" "Sync flounder" "Quit")
+  options=("Build ls990 clean" "Build flounder clean" "Build ls990 dirty" "Build flounder dirty" "Sync ls990 gsm" "Sync ls990 cdma" "Sync flounder" "Quit")
   select opt in "${options[@]}"
 do
     case $opt in
