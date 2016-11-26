@@ -49,8 +49,8 @@ do
             echo -e ${CL_BLU}"                                                                                                                 ${CL_RST}";
             echo "Cleaning,syncing,lunching,and building.Zip with be in home/roms folder."; 
             . build/envsetup.sh
-            make clean
             lunch tesla_flounder-userdebug
+            make clean
             time make tesla -j8
             mv -f $ANDROID_PRODUCT_OUT/Tesla*.zip ~/roms
             cd
@@ -126,24 +126,24 @@ do
             echo -e ${CL_BLU}"                                                                                                                 ${CL_RST}";
             echo "Cleaning,syncing,lunching,and building.Zip with be in home/roms folder."; 
             . build/envsetup.sh
-            make clobber
             lunch tesla_flounder-userdebug
+            make clobber
             time make tesla -j8
             mv -f $ANDROID_PRODUCT_OUT/Tesla*.zip ~/roms
             cd
             ;;           
         "Build ls990 bootimage")
-          . build/envsetup.sh
-            make clobber
+            . build/envsetup.sh
             lunch tesla_ls990-userdebug
+            make clobber
             time make bootimage -j8
             mv -f $ANDROID_PRODUCT_OUT/Tesla*.zip ~/roms
             cd
             ;;
          "Build flounder bootimage")
-          . build/envsetup.sh
-            make clobber
+            . build/envsetup.sh
             lunch tesla_flounder-userdebug
+            make clobber
             time make bootimage -j8
             mv -f $ANDROID_PRODUCT_OUT/Tesla*.zip ~/roms
             cd
