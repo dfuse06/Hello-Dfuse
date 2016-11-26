@@ -133,6 +133,7 @@ do
             cd
             ;;           
         "Build ls990 bootimage")
+            cd ~/Tesla
             . build/envsetup.sh
             lunch tesla_ls990-userdebug
             make clobber
@@ -141,6 +142,7 @@ do
             cd
             ;;
          "Build flounder bootimage")
+            cd ~/Tesla
             . build/envsetup.sh
             lunch tesla_flounder-userdebug
             make clobber
