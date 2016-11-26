@@ -137,7 +137,7 @@ do
             lunch tesla_ls990-userdebug
             make clobber
             time make bootimage -j8
-            mv -f $ANDROID_PRODUCT_OUT/Tesla*.zip ~/roms
+            mv -f $ANDROID_PRODUCT_OUT/boot.img ~/roms
             cd
             ;;
          "Build flounder bootimage")
@@ -145,7 +145,7 @@ do
             lunch tesla_flounder-userdebug
             make clobber
             time make bootimage -j8
-            mv -f $ANDROID_PRODUCT_OUT/Tesla*.zip ~/roms
+            mv -f $ANDROID_PRODUCT_OUT/boot.img ~/roms
             cd
             ;;
         "Checkout ls990 gsm tree")
