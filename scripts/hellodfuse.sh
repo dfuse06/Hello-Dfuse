@@ -35,6 +35,7 @@ do
             time make tesla -j8
             mv -f $ANDROID_PRODUCT_OUT/Tesla*.zip ~/roms
             cd
+            break;
             ;;
         "Build flounder clean")
             CL_BLU="\033[34m"
@@ -54,6 +55,7 @@ do
             time make tesla -j8
             mv -f $ANDROID_PRODUCT_OUT/Tesla*.zip ~/roms
             cd
+            break;
             ;;
         "Build ls990 dirty")
              CL_BLU="\033[34m"
@@ -73,6 +75,7 @@ do
             time make tesla -j8
             mv -f $ANDROID_PRODUCT_OUT/Tesla*.zip ~/roms
             cd
+            break;
             ;;
          "Build flounder dirty")
             CL_BLU="\033[34m"
@@ -92,6 +95,7 @@ do
             time make tesla -j8
             mv -f $ANDROID_PRODUCT_OUT/Tesla*.zip ~/roms
             cd
+            break;
             ;;
         "Build ls990 clobber")
             CL_BLU="\033[34m"
@@ -112,6 +116,7 @@ do
             time make tesla -j8
             mv -f $ANDROID_PRODUCT_OUT/Tesla*.zip ~/roms
             cd
+            break;
             ;;
         "Build flounder clobber")
             CL_BLU="\033[34m"
@@ -131,6 +136,7 @@ do
             time make tesla -j8
             mv -f $ANDROID_PRODUCT_OUT/Tesla*.zip ~/roms
             cd
+            break;
             ;;           
         "Build ls990 bootimage")
             cd ~/Tesla
@@ -140,6 +146,7 @@ do
             time make bootimage -j8
             mv -f $ANDROID_PRODUCT_OUT/boot.img ~/roms
             cd
+            break;
             ;;
          "Build flounder bootimage")
             cd ~/Tesla
@@ -169,6 +176,7 @@ do
            cd ~/roms
            cp tesla.devices ~/Tesla/vendor/tesla
            cd ~/Tesla
+           break;
            ;;           
         "Quit")
             exit
