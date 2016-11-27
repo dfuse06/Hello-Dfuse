@@ -153,6 +153,7 @@ do
         "Checkout ls990 gsm tree")
             cd ~/Tesla/device/lge/g3
             git checkout n7.1
+            git pull
             git checkout n7.1_gsm
             cd ~/Tesla
             ;;
