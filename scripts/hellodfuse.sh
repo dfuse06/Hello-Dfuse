@@ -151,14 +151,14 @@ do
             cd
             ;;
         "Checkout ls990 gsm tree")
-            cd ~/Tesla/device/lge/g3
+            cd ~/Tesla/device/lge/ls990
             git checkout n7.1
             git pull
             git checkout n7.1_gsm
             cd ~/Tesla
             ;;
         "Checkout ls990 cdma tree")
-            cd ~/Tesla/device/lge/g3
+            cd ~/Tesla/device/lge/ls990
             git checkout n7.1
             cd ~/Tesla
             ;;
