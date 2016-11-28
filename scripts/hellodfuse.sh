@@ -12,7 +12,7 @@
 while true
 do 
   PS3='What would you like to do today?:'
-  options=("Build ls990 clean" "Build flounder clean" "Build ls990 dirty" "Build flounder dirty" "Build ls990 clobber" "Build flounder clobber" "Build ls990 bootimage" "Build flounder bootimage" "Checkout ls990 gsm tree" "Checkout ls990 cdma tree" "Remove source & sync" "Quit")
+  options=("Build ls990 clean" "Build flounder clean" "Build ls990 dirty" "Build flounder dirty" "Build ls990 clobber" "Build flounder clobber" "Build ls990 bootimage" "Build flounder bootimage" "Checkout ls990 gsm tree" "Checkout ls990 cdma tree" "Clone toolchain" "Remove source & sync" "Quit")
   select opt in "${options[@]}"
 do
     case $opt in
@@ -177,7 +177,12 @@ do
            cp tesla.devices ~/Tesla/vendor/tesla
            cd ~/Tesla
            break;
-           ;;           
+           ;;
+        "Clone toolchain")
+           cd ~/Tesla/prebuilts/gcc/linux-x86/arm/ 
+           git clone https://dfuse06@bitbucket.org/mdalexca/arm-linux-androideabi-6.x.git
+           cd ~/Tesla
+           ;;          
         "Quit")
             exit
             ;;
