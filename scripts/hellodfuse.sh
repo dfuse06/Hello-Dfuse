@@ -49,6 +49,7 @@ do
             echo -e ${CL_BLU}"   ╚═╝   ╚══════╝╚══════╝╚══════╝╚═╝  ╚═╝    ╚═╝     ╚══════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═══╝╚═════╝ ╚══════╝╚═╝  ╚═╝${CL_BLU}";
             echo -e ${CL_BLU}"                                                                                                                 ${CL_RST}";
             echo "Cleaning,syncing,lunching,and building.Zip with be in home/roms folder."; 
+            cd ~/Tesla
             . build/envsetup.sh
             lunch tesla_flounder-userdebug
             make clean
@@ -130,6 +131,7 @@ do
             echo -e ${CL_BLU}"   ╚═╝   ╚══════╝╚══════╝╚══════╝╚═╝  ╚═╝    ╚═╝     ╚══════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═══╝╚═════╝ ╚══════╝╚═╝  ╚═╝${CL_BLU}";
             echo -e ${CL_BLU}"                                                                                                                 ${CL_RST}";
             echo "Cleaning,syncing,lunching,and building.Zip with be in home/roms folder."; 
+            cd ~/Tesla
             . build/envsetup.sh
             lunch tesla_flounder-userdebug
             make clobber
